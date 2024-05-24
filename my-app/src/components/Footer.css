@@ -1,0 +1,52 @@
+/* src/Footer.css */
+.premium-footer {
+    background: linear-gradient(90deg, #e52e71, #ff8a00);
+    color: white;
+    padding: 2rem 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .footer-links,
+  .footer-social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .footer-social-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a,
+  .footer-social-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover,
+  .footer-social-links a:hover {
+    color: #ffe600;
+  }
+  
+  .footer-social-links a i {
+    margin-right: 0.5rem;
+  }
+  
+  .footer-copy {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    opacity: 0.8;
+  }
+  

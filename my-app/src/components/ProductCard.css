@@ -1,0 +1,29 @@
+/* src/ProductCard.css */
+.product-card {
+    width: 18rem; /* Adjust width as necessary */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 180px; /* Adjust height as needed */
+    object-fit: cover;
+  }
+  
+  .product-price {
+    color: #e52e71;
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
