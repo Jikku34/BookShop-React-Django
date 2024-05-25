@@ -9,13 +9,13 @@
  *  The JSX element representing the BookDetails component.
  */
 import  { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 
 const BookDetails = () => {
     const { id } = useParams(); // Get the book ID from the URL parameters
     const navigate = useNavigate(); // Hook for navigating to different pages
-    const [book, setBook] = useState(null); // State to store the book details
+    const [book, setBook] = useState({}); // State to store the book details
     const [loading, setLoading] = useState(true); // State to track loading status
     const [error, setError] = useState(''); // State to store error messages
 
@@ -90,7 +90,8 @@ const BookDetails = () => {
 
     return (
         <div>
-            <button onClick={deleteBook} className='btn btn-danger'>
+            <Link className='btn btn-success m-2' to={`/update/${book.book_id}`}>Update Book</Link>
+            <button onClick={deleteBook} className='btn btn-danger m-2'>
                 Delete book
             </button>
             <h2>Book Name: {book.book_name}</h2>

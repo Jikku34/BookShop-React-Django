@@ -44,7 +44,7 @@ const Home = () => {
     return (
         <div className='row'>
             {/* Map through the list of books and render a product card for each book */}
-            {books.map((book) => (
+            {books.map((book,index) => (
                 <div className="card product-card col-2" key={book.book_id}>
                     {/* Display the book image */}
                     <img src={`http://127.0.0.1:8000/${book.book_image}`} className="card-img-top" alt={book.book_name} />

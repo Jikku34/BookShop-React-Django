@@ -14,7 +14,8 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import BookDetails from './components/BookDetails';
-
+import AddBook from './components/AddBook';
+import UpdateBook from './components/UpdateBook';
 /**
  * Main entry point of the React application.
  * 
@@ -31,6 +32,8 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* Route for viewing single book details */}
           <Route path="/book/:id" element={<BookDetails />} />
+          <Route path="/add" element={<AddBook />} />
+          <Route path="/update/:id" element={<UpdateBook />} />
         </Routes>
       <Footer /> {/* Render the footer component */}
     </>
