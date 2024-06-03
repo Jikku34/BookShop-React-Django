@@ -1,5 +1,6 @@
-let a = {name:"Naveen",age:21,address:"Kaloor"}
+let data = {Friend:"Naveen",age:21,address:"Kaloor"}
 
-let b = {...a,name:"Ann"}
+let c= 'Friend'
+let newData= {...data,city:"Amal"}
 
-console.log(b);
+console.log(newData);

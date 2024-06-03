@@ -13,7 +13,13 @@ const getEntityById = async () => {
     try {
         const response = await axios.get(`http://127.0.0.1:8000/book/${id}`);
         console.log(response.data);
-        setBook(response.data)
+   
+        
+        let result = response.data;
+        delete result.book_image;
+        console.log(result);
+        
+        setBook(result)
     } catch (error) {
         if (error.response) {
             console.error(`Error Status Code: ${error.response.status}`);
@@ -132,6 +138,7 @@ const bookUpdate = () => {
        
           required
         />
+        <img src={`http://127.0.0.1:8000/${book.book_image}`} alt="" />
       </div>
       <button type="button" onClick={bookUpdate} className="btn btn-primary">Submit</button>
     </form>
